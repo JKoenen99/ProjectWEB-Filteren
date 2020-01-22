@@ -13,6 +13,8 @@
 
 .container {
     font-weight: 600;
+    padding-left: calc((100% - 1150px)/ 2);
+    padding-right: calc((100% - 1150px)/ 2);
   }
 
 @media only screen and (max-width: 30em) {
