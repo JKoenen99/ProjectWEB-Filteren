@@ -39,6 +39,8 @@
   .container p {
     padding: 0em 0em 15%;
     font-size: 110%;
+    line-height: 2em;
+    font-weight: 500;
   }
 
   .logo-verhaal {

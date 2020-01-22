@@ -152,6 +152,11 @@ button.standaardbtn {
     padding: 0.625em 0.9375em 0.625em 0.9375em !important; 
     transition: ease background-position .5s;
     background-position: right 0.625em top 0.8125em;
+    cursor: pointer;
+}
+
+button.standaardbtn:hover {
+	background-color: #1f8de4;
 }
 
 .login {
@@ -162,6 +167,13 @@ button.standaardbtn {
 	margin: 3em 0em 2em;
 }
 
+a {
+  cursor: pointer;
+}
+
+a.vergeten:hover{
+  color: #1f8de4;
+}
 
 
 @media only screen and (max-width: 30em) {
