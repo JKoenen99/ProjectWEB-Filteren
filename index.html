@@ -25,7 +25,61 @@
       </li>
     </ul>
   </header>
+
+
   <main>
+    <section class="filters">
+      <form>
+        <fieldset>
+          <legend>Zoek op genre</legend>
+          <label for="genre">Genre</label>
+          <select name="genre" id="genre" required>
+            <option value="" disabled selected>- Selecteer een genre -</option>
+            <option value="genre1">Chaos</option>
+            <option value="genre1">Wild</option>
+            <option value="genre1">Energiek</option>
+            <option value="genre1">Emotioneel</option>
+            <option value="genre1">Verrassend</option>
+            <option value="genre1">Chill</option>
+            <option value="genre1">Relaxt</option>
+          </select>
+          
+          
+
+        </fieldset>
+
+        <fieldset>
+          <legend>en op leesduur</legend>
+
+          <label for="leesduur">Leesduur in minuten</label>
+
+      <div class='radio_section' name="leesduur">
+        <input id="item-1" class="radio-inline__input" type="radio" name="accessible-radio" value="item-1"/>
+        <label class="radio-inline__label" for="item-1">
+          1 - 2
+        </label>
+  
+        <input id="item-2" class="radio-inline__input" type="radio" name="accessible-radio" value="item-2"/>
+         <label class="radio-inline__label" for="item-2">
+          3-5
+        </label>
+        
+        <input id="item-3" class="radio-inline__input" type="radio" name="accessible-radio" value="item-3"/>
+        <label class="radio-inline__label" for="item-3">
+          5-10
+        </label>
+        
+        <input id="item-4" class="radio-inline__input" type="radio" name="accessible-radio" value="item-4"/>
+        <label class="radio-inline__label" for="item-4">
+          10+
+        </label>
+      </div>
+
+     
+        </fieldset>
+        <button class="btn-submit">Zoeken</button>
+      </form>
+    </section>
     <section class="verhalen slide-in-left">
       <section class="cards" id="mySection">
         <div class="card">
