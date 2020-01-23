@@ -520,6 +520,14 @@ label[for="leesduur"] {
     width: calc(100% / 4);
 }
 
+.radio-inline__labele:hover {
+  cursor: pointer;
+}
+
+.radio_section {
+  cursor: pointer;
+}
+
 .radio-inline__label:first-of-type {
   border-radius: 5px 0px 0px 5px;
 }
