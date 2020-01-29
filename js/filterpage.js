@@ -24,20 +24,23 @@ main.addEventListener('click', function() {
 
 function myFunction() {
   // Declare variables
-  var input, filter, ul, li, h2, i, txtValue;
+  var input, filter, section, card, i, txtValue;
   input = document.querySelector('input.search-box');
   filter = input.value.toUpperCase();
-  ul = document.getElementById("mySection");
-  li = ul.getElementsByTagName('li');
+
+  section = document.getElementById("mySection");
+  card = section.getElementsByClassName('card');
+
 
   // Loop through all list items, and hide those who don't match the search query
-  for (i = 0; i < li.length; i++) {
-    h2 = li[i].getElementsByTagName("h2")[0];
-    txtValue = h2.textContent || h2.innerText;
+  for (i = 0; i < card.length; i++) {
+    a = card[i].getElementsByClassName("title_test")[0];
+    txtValue = a.textContent || a.innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      li[i].style.display = "";
+      card[i].style.display = "";
     } else {
-      li[i].style.display = "none";
+      card[i].style.display = "none";
     }
   }
 }
+
