@@ -11,6 +11,7 @@ searchbutton.addEventListener('click', function() {
     console.log('actie');
 });
 
+
 var main = document.querySelector('main');
 
 main.addEventListener('click', function() {
@@ -21,6 +22,11 @@ main.addEventListener('click', function() {
   console.log('klik weg');
 });
 
+window.onload = function() {
+	document.getElementById("myInput").addEventListener('keyup', function(){
+		myFunction();
+	});
+}
 
 function myFunction() {
   // Declare variables
