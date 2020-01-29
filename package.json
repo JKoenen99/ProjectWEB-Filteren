@@ -1,0 +1,20 @@
+{
+  "name": "ProjectWEB-Filteren",
+  "version": "1.0.0",
+  "description": "Een pagina waarop een overzicht staat van een aantal verhalen. De verhalen zijn responsive weergegeven en hebben hover states. Je kunt tussen de verhalen zoeken wegens de zoekbutton rechtsboven in de header. De website is gemaakt in de stijl van de RET.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JKoenen99/ProjectWEB-Filteren.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JKoenen99/ProjectWEB-Filteren/issues"
+  },
+  "homepage": "https://github.com/JKoenen99/ProjectWEB-Filteren#readme"
+}

@@ -20,7 +20,7 @@
       </li>
       <li class="search-container">
         <input type="text" class="search-box" name="searchbox" id="myInput" placeholder="Zoek verhalen...">
-        <button class="search-button" name="searchbutton"><span class="fa fa-search"></span></button>
+        <button class="search-button" name="searchbutton"><span class="fa fa-search" aria-label="zoek verhalen knop"></span></button>
       </li>
     </ul>
   </header>
@@ -42,39 +42,30 @@
             <option value="genre1">2019</option>
             <option value="genre1">2020</option>
           </select>
-          
-          
-
         </fieldset>
 
         <fieldset name="leesduur">
-  
-          <label for="leesduur">Leesduur in minuten</label>
+          <label >Leesduur in minuten</label>
+          <div class='radio_section'>
+            <input id="item-1" class="radio-inline__input" type="radio" name="accessible-radio" value="item-1"/>
+            <label class="radio-inline__label" for="item-1">
+              1 - 2
+            </label>
+            <input id="item-2" class="radio-inline__input" type="radio" name="accessible-radio" value="item-2"/>
+            <label class="radio-inline__label" for="item-2">
+              3-5
+            </label>
+            <input id="item-3" class="radio-inline__input" type="radio" name="accessible-radio" value="item-3"/>
+            <label class="radio-inline__label" for="item-3">
+              5-10
+            </label>
+            <input id="item-4" class="radio-inline__input" type="radio" name="accessible-radio" value="item-4"/>
+            <label class="radio-inline__label" for="item-4">
+              10+
+            </label>
+            </div>
+          </fieldset>
 
-      <div class='radio_section'>
-        <input id="item-1" class="radio-inline__input" type="radio" name="accessible-radio" value="item-1"/>
-        <label class="radio-inline__label" for="item-1">
-          1 - 2
-        </label>
-  
-        <input id="item-2" class="radio-inline__input" type="radio" name="accessible-radio" value="item-2"/>
-         <label class="radio-inline__label" for="item-2">
-          3-5
-        </label>
-        
-        <input id="item-3" class="radio-inline__input" type="radio" name="accessible-radio" value="item-3"/>
-        <label class="radio-inline__label" for="item-3">
-          5-10
-        </label>
-        
-        <input id="item-4" class="radio-inline__input" type="radio" name="accessible-radio" value="item-4"/>
-        <label class="radio-inline__label" for="item-4">
-          10+
-        </label>
-      </div>
-
-     
-        </fieldset>
         <button class="btn-submit">Zoeken 
           <span class="btn__icon btn__icon--red">
           <svg width="14px" height="10px" viewBox="0 0 14 10" version="1.1">
@@ -91,7 +82,7 @@
 
     </div>
 
-    <section class="verhalen slide-in-left">
+    <div class="verhalen slide-in-left">
       <section class="cards" id="mySection">
         <div class="card">
             <div class="card__image-container">
@@ -109,7 +100,7 @@
                 <i class="time__icon fa-hourglass-half fas"></i> 3 min
               </p>
               <p class="card__category text--medium">Chaos</p>
-                <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+                <div class="fa fa-heart-o heart-circle" aria-hidden="true">
                   <span class="heart"><i class="fa-heart far border-heart"></i></span>
                 </div>
               </div>
@@ -132,7 +123,7 @@
               <i class="time__icon fa-hourglass-half fas"></i> 3 min
             </p>
             <p class="card__category text--medium">Chaos</p>
-              <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+              <div class="fa fa-heart-o heart-circle" aria-hidden="true">
                 <span class="heart"><i class="fa-heart far border-heart"></i></span>
               </div>
             </div>
@@ -155,7 +146,7 @@
             <i class="time__icon fa-hourglass-half fas"></i> 3 min
           </p>
           <p class="card__category text--medium">Chaos</p>
-            <div class="fa fa-heart-o" aria-hidden="true" id="heart">
+            <div class="fa fa-heart-o heart-circle" aria-hidden="true">
               <span class="heart"><i class="fa-heart far border-heart"></i></span>
             </div>
           </div>
@@ -163,7 +154,7 @@
     </div>
 
       </section>
-    </section>
+    </div>
     <section class="actie">
       <span class="line"> </span>
       <h2 class="text--medium">
@@ -175,9 +166,8 @@
       </a>
     </section>
   </main>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/filterpage.js"></script>
+  <script src="js/heartlike.js"></script>
 </body>
-<script src="js/jquery-3.4.1.min.js"></script>
-<script src="js/filterpage.js"></script>
-<script src="js/heartlike.js"></script>
-
 </html>
