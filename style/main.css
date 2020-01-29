@@ -79,26 +79,8 @@ header ul {
   }
 }
 
-header .nav {
-  padding: 1.2rem;
-  color: white;
-}
-
-header .nav li {
-  padding: 0em 2em;
-}
-header .nav li:hover {
-  color: red;
-}
-
-header .nav li.this__page {
-  text-decoration: underline;
-}
-
 header h1 {
-  -webkit-text-fill-color: #d82331; /* Will override color (regardless of order) */
   font-size: 1em;
-  line-height: 3.75em;
 }
 
 ul {
@@ -364,14 +346,6 @@ select {
   opacity: 1;
 }
 
-legend {
-  font-weight: 600;
-  color: white;
-  font-size: 2em;
-}
-
-
-
 label {
   color: var(--snowWhite);
   font-weight: 600;
@@ -389,32 +363,12 @@ select:focus, select:active, label:focus, label:active, input:focus, input:activ
   box-shadow: 0px 3px 0px var(--ctaBlauw);
 }
 
-label:invalid, input:invalid {
-  box-shadow: 0px 3px 0px var(--errorRood)
-}
-
 .filters {
   padding-left: calc((100% - 1200px)/ 2);
   padding-right: calc((100% - 1200px)/ 2);
   background: var(--mainBlauw);
   display: flex;
   transition: .2s ease;
-}
-
-.form__input--inline .btn .btn__icon {
-  width: auto;
-  margin: 0;
-  font-size: 12px;
-}
-
-.btn .btn__icon {
-  position: relative;
-  display: inline-block;
-  top: -2px;
-  line-height: 12px;
-  margin-left: 20px;
-  color: #fff;
-  font-size: 12px;
 }
 
 fieldset {
